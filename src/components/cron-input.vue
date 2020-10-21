@@ -10,7 +10,7 @@
     </el-popover>
       </el-col>
      <el-col :span="6">
-      <el-popover >
+      <el-popover v-model="quickRuleVisible" >
         <el-table
       :data="tableData"
       size="mini"
@@ -52,10 +52,13 @@ export default {
     return {
       cron_: '',
       visible: false,
+      quickRuleVisible:false,
       tableData:[
-        {rulename:'aaa',rule:'0 0 12 * * ?'},
-        {rulename:'bbbb',rule:'0 0 13 * * ?'},
-        {rulename:'ccc',rule:'0 0 14 * * ?'},
+        {rulename:'每天,上午9点',rule:'0 0 9 * * ? *'},
+        {rulename:'每星期一,上午9点',rule:'0 0 9 ? * 2 *'},
+        {rulename:'每月1日,上午9点',rule:'0 0 9 1 * ?'},
+        {rulename:'每3个月的1日,上午9点',rule:'0 0 9 1 1/3 ?'},
+       
       ]
     }
   },
@@ -70,6 +73,7 @@ export default {
   methods: {
     handleRowClick(row){
       this.cron_ = row.rule
+      this.quickRuleVisible = false
     },
     setCron(newValue) {
       if (!newValue || newValue.trim().length < 11) {

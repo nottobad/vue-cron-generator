@@ -26,4 +26,4 @@ export const
   //
   UPPER_LIMIT_YEAR = 2099,
   // default cron expression
-  DEFAULT_CRON_EXPRESSION = '0 0 12 * * ?'
+  DEFAULT_CRON_EXPRESSION = '0 30 8 * * ? *'
