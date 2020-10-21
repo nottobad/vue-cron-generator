@@ -50,18 +50,5 @@ export default {
 </script>
 
 <style >
- .cell-div{
-     margin-bottom: 8px;
- }
-
-
- .cell-symbol{
-    color: #67C23A;
-   }
-
- .cron-row{
-     margin-top: 8px;
-     max-width: 550px;
- }
 
 </style>
