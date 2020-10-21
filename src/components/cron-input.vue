@@ -24,9 +24,8 @@
     </el-table>
         <el-button  slot="reference" size="mini" icon="el-icon-menu"/>
       </el-popover>
-     </el-col>
+          </el-col>
     </el-row>
-
   </div>
 </template>
 
