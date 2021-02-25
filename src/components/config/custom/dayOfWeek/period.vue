@@ -1,7 +1,7 @@
 <template>
   <div class="cell-div">
     <el-radio v-model="type_" :label="label" @change="change">
-      <span class="cell-symbol">{{ tag_ }}</span>
+      <!-- <span class="cell-symbol">{{ tag_ }}</span> -->
       {{ $t('common.from') }}
       <el-select
         v-model="start"

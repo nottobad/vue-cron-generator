@@ -25,7 +25,12 @@ export default {
     tagError: 'Tag Error ',
     numError: 'Number Error ',
     use: 'Use',
-    inputPlaceholder: 'Cron Expression'
+    inputPlaceholder: 'Cron Expression',
+    rules:'Common time rules',
+    rule1:'Every day, 9 a.m',
+    rule2:'Every Monday, 9 a.m',
+    rule3:'On the first day of every month, 9 a.m',
+    rule4:'On the first day of every three months, 9 a.m',
   },
   custom: {
     unspecified: 'Unspecified',

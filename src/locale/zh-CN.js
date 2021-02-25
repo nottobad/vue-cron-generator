@@ -25,7 +25,12 @@ export default {
     tagError: '表达式不正确',
     numError: '含有非法数字',
     use: '使用',
-    inputPlaceholder: 'Cron表达式'
+    inputPlaceholder: 'Cron表达式',
+    rules:'常用时间规则',
+    rule1:'每天,上午9点',
+    rule2:'每星期一,上午9点',
+    rule3:'每月1日,上午9点',
+    rule4:'每3个月的1日,上午9点',
   },
   custom: {
     unspecified: '不固定',

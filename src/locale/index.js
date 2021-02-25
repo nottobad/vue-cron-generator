@@ -23,6 +23,7 @@ const messages = {
   // set locale
   // options: en | zh
     locale: getLocale(),
+    // locale: 'en_US',
     // set locale messages
     messages
   })

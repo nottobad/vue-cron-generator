@@ -18,7 +18,7 @@
       style="width: 100%">
       <el-table-column
         prop="rulename"
-        label="常用时间规则"
+        :label="$t('common.rules')"
         width="180">
       </el-table-column>
     </el-table>
@@ -52,13 +52,23 @@ export default {
       cron_: '',
       visible: false,
       quickRuleVisible:false,
-      tableData:[
-        {rulename:'每天,上午9点',rule:'0 0 9 * * ? *'},
-        {rulename:'每星期一,上午9点',rule:'0 0 9 ? * 2 *'},
-        {rulename:'每月1日,上午9点',rule:'0 0 9 1 * ?'},
-        {rulename:'每3个月的1日,上午9点',rule:'0 0 9 1 1/3 ?'},
-       
+      // tableData:[
+      //   {rulename:'每天,上午9点',rule:'0 0 9 * * ? *'},
+      //   {rulename:'每星期一,上午9点',rule:'0 0 9 ? * 2 *'},
+      //   {rulename:'每月1日,上午9点',rule:'0 0 9 1 * ?'},
+      //   {rulename:'每3个月的1日,上午9点',rule:'0 0 9 1 1/3 ?'},
+      // ]
+    }
+  },
+  computed:{
+    tableData(){
+      var temp = [
+        {rulename:this.$t('common.rule1') ,rule:'0 0 9 * * ? *'},
+        {rulename:this.$t('common.rule2'),rule:'0 0 9 ? * 2 *'},
+        {rulename:this.$t('common.rule3'),rule:'0 0 9 1 * ?'},
+        {rulename:this.$t('common.rule4'),rule:'0 0 9 1 1/3 ?'},
       ]
+      return temp;
     }
   },
   watch: {

@@ -2,8 +2,8 @@
   <div class="cell-div">
     <el-radio v-model="type_" :label="label" @change="change">
       <el-tooltip effect="dark" placement="top">
-        <div slot="content">{{ tag_ }}</div>
-        <span class="cell-symbol">,</span>
+        <!-- <div slot="content">{{ tag_ }}</div>
+        <span class="cell-symbol">,</span> -->
       </el-tooltip>
       {{ $t('common.specified') }}
       <el-select

@@ -1,7 +1,7 @@
 <template>
   <div class="cell-div">
     <el-radio v-model="type_" :label="label" @change="change">
-      <span class="cell-symbol">{{ tag_ }}</span>
+      <!-- <span class="cell-symbol">{{ tag_ }}</span> -->
       {{ $t('common.between') }}
       <el-input-number v-model="lower" :precision="0" :min="lowerConfig.min" :step="lowerConfig.step" :max="upper_" :size="size"/>
       {{ timeUnit }}{{ $t('common.and') }}
