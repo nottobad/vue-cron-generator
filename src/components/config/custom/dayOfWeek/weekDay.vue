@@ -97,3 +97,6 @@ export default {
   }
 }
 </script>
+<style>
+    .el-icon-circle-check{display:none}
+</style>
